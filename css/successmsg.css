@@ -1,0 +1,41 @@
+:root{
+    --primary: rgb(29, 221, 189);
+    --bgDark: rgb(12, 12, 12);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(4, 3, 27);
+    --bgLight: rgb(190, 181, 181);
+    --daeblue : rgb(44, 77, 183); 
+    --daepink : rgb(236, 70, 245);
+    --daegreen : rgb(165, 254, 166);
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header{
+    background-color: var(--bgDark);
+    padding: 7vw 0vw 3vw;
+    color: var(--white);
+    text-align:  center;
+    font-size: x-large;
+}
+
+/* CSS untuk memusatkan gambar dan mengatur ukurannya */
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgDark);
+    padding-bottom: 3.3vw;
+}
+
+.picture img {
+    max-width: 20%; /* Mengatur lebar maksimum gambar menjadi 50% dari lebar container */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+

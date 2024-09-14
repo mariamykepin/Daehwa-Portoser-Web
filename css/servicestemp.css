@@ -1,0 +1,477 @@
+:root{
+  --primary: rgb(29, 221, 189);
+  --bgDark: rgb(12, 12, 12);
+  --white: rgb(250, 250, 250);
+  --secondary: rgb(4, 3, 27);
+  --bgLight: rgb(190, 181, 181);
+  --daeblue : rgb(44, 77, 183); 
+  --daepink : rgb(236, 70, 245);
+  --daegreen : rgb(165, 254, 166);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.headerserv {
+  background-size: cover;
+  background-color: var(--secondary);
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center1 {
+  background-size: cover;
+  background-color: var(--daegreen);
+  justify-content: center;
+  text-align: center;
+  height: 15vh;
+}
+
+.Services1 {
+  display: inline-block;
+  width: 25%;
+  text-align: left;
+  color: var(--daegreen);
+  font-size: 3vw;
+}
+
+.Services2 {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+  color: var(--daepink);
+  font-size: 3vw;
+}
+
+.catalogue {
+  display: inline-flexbox;
+  width: 100%;
+}
+
+.uppername {
+  text-align: center;
+  background-color: var(--daeblue);
+  padding: 2vw;
+}
+
+.illustday {
+  font-size: 3vw;
+  color: var(--daegreen);
+}
+
+.contents {
+  background-color: var(--daeblue);
+  padding: 2vw;
+  width: 100%;
+}
+
+#headshot, #bustup, #halfbody, #fullbody {
+  justify-self: start;
+  display: inline-flex;
+  padding: 2vw 5vw;
+  /*padding-left: 7em;
+  padding-right: 5em;
+  padding-top: 2em;*/
+}
+
+.carousel {
+  float: right;
+  text-align: right;
+  margin-left: auto;
+}
+
+.point {
+  font-size: 2.5vw;
+  color: var(--white);
+}
+#prodlist .pricelist {
+  list-style-type: none; /* Ensure pricelist itself doesn't have bullets */
+  padding: 0;
+  margin: 0;
+}
+
+#prodlist .pricelist ul {
+  list-style-type: none; /* Remove bullets from the ul */
+  padding: 3vw;            /* Remove default padding */
+  margin: 0;             /* Remove default margin */
+}
+
+#prodlist .pricelist ul li {
+  list-style-type: none; /* Ensure li doesn't have bullets */
+  padding: 0;            /* Remove default padding */
+  margin: 0;             /* Remove default margin */
+  margin-bottom: 5px;    /* Optional: Adds some space between list items */
+}
+
+
+/* Slideshow container */
+.Sshow {
+  width: 80vh;
+  height: 80vh;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin: auto;
+  float: left;
+  overflow: hidden;
+  border: 1vw solid var(--daepink);
+  background-color: var(--daepink);
+  display: flex;
+  justify-content: center;
+  /*
+  width: 500px;
+  height : 500px;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin: auto;
+  float: left;
+  overflow: hidden;
+  border: 15px solid var(--daepink);
+  background-color: var(--daepink);
+  display: flex;
+  justify-content: center; /* Mengatur posisi gambar di tengah horizontal
+  align-items: center; /* Mengatur posisi gambar di tengah vertikal 
+  */
+}
+
+.Sshow img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Memastikan gambar tetap di dalam kotak tanpa memotong */
+}
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {
+  display: none;
+}
+.mySlides1.active, .mySlides2.active, .mySlides3.active, .mySlides4.active {
+  display: flex;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 1vw;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 0.3vw 0 0 0.3vw;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0.3vw 0 0 0.3vw;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: var(--bgDark);
+  bottom: 2vw;
+  text-align: center;
+  font-size: larger;
+  position: sticky;
+  background-color: #d44b864d;
+}
+
+.numbertext {
+  color: var(--white);
+  font-size: 2vw;
+  padding: 1vw 1vw;
+  position: relative;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5vw;
+  width: 1.5vw;
+  margin: 0 0.2vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.tos {
+  background-color: var(--bgDark);
+}
+
+.explaintos{
+  color: var(--bgLight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
+#descenter, #expcent{
+  margin-top: 5vh;
+  font-size: x-large;
+  max-width: 55vw;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+
+.dd {
+  color: var(--bgLight);
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  margin-top: 3vw;
+  font-size: x-large;
+  padding-top: 1vh;
+}
+.additional{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 35vw;
+  margin: 0 auto;
+  color: var(--bgLight);
+  margin-top: 3vw;
+  padding-bottom: 3vw;
+  font-size: x-large;
+  text-align: justify;
+}
+.payment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 35vw;
+  margin: 0 auto;
+  color: var(--bgLight);
+  margin-top: 3vw;
+  padding-bottom: 3vw;
+  font-size: x-large;
+}
+
+.pydesc{
+  padding-top: 1vh;
+  padding-bottom: 5vh;
+}
+
+.costestimator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 50vw;
+  margin: 0 auto;
+  color: var(--bgDark);
+  margin-top: 2vh;
+  font-size: x-large;
+}
+.costtitle {
+  padding-top: 5vh;
+}
+
+.describe {
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  text-align: justify;
+}
+
+#estimator-form {
+  background-color: var(--daepink);
+  padding: 5vw;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.212);
+}
+
+#estimator-form > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#estimator-form > ul > li {
+  margin-bottom: 1vh;
+}
+
+#estimator-form h5 {
+  margin: 5vh 0 3vh 0;
+}
+
+#estimator-form ul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10vw;
+}
+
+#estimator-form ul ul li {
+  margin-bottom: 0;
+}
+
+#estimator-form label {
+  display: flex;
+  align-items: center;
+}
+
+#estimator-form input[type="checkbox"] {
+  margin-right: 1vw;
+}
+.currency-options {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+}
+
+/* Style the 'Total Cost' heading */
+.total-cost h5 {
+  font-weight: bold;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+}
+
+/* Style the 'total-price' span */
+.total-price {
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #333; /* Adjust text color as needed */
+}
+
+.btn-calculate {
+  background-color: var(--daepink); /* Background color */
+  color: var(--bgDark); /* Text color */
+  padding: 10px 20px; /* Padding */
+  font-size: large; /* Font size */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  margin-top: 3vw;
+  font-weight: bold;
+}
+
+/* Hover effect for the calculate button */
+.btn-calculate:hover {
+  background-color: #d44b86; /* Darker shade of pink for hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Active effect for the calculate button */
+.btn-calculate:active {
+  background-color: #c9417b; /* Even darker shade of pink for active state */
+  transform: scale(1); /* Reset the scale */
+}
+
+
+.form{
+  background-color: var(--secondary);
+  align-items: center;
+  padding-bottom: 2%;
+}
+#ifor{
+  color: var(--bgLight);
+  margin-top: 5%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5vw;
+  font-size: x-large;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+
+}
+.form-group label {
+  width: 15%;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--bgLight);
+}
+
+.labell{
+  color: var(--bgLight);
+  padding-left: 10%;
+}
+
+.form-group input, form-group select {
+  width: 70%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid var(--daeblue);
+  border-radius: 5px;
+  color: var(--bgLight);
+}
+.form-group input:hover{
+  border: 1px solid var(--daepink);
+  border-radius: 5px;
+  color: var(--bgLight);
+}
+.form-group input[type="submit"] {
+  width: 70%;
+  margin: 0 auto;
+  background-color: var(--daeblue);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 16px;
+  align-items: center;
+}
+.form-group input[type="submit"]:hover {
+    background-color: var(--daepink);
+}
+
+.underbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7%;
+  background-color: var(--secondary);
+  text-align: center;
+}
+#uptopage{
+  color: var(--bgLight);
+  font-size: xx-large;
+}

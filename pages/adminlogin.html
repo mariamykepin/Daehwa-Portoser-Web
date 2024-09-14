@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superadmin Login</title>
+    <link rel="stylesheet" href="../css/adminlogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Superadmin Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="buttom">
+                <a href="superadmin.html">    
+                    <button type="submit">Login</button>
+                </a>
+            </div>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+    <script src="../js/adminlogin.js"></script>
+</body>
+</html>
